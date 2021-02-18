@@ -229,7 +229,7 @@ class Highlighter(base.Highlighter):
 
                 # Add title annotation next to highlight
                 annotator.add_annotation("text", Location(x1=x1, y1=y1, x2=x2, y2=y2, page=page),
-                                         Appearance(fill=rgb + (1,), font_size=7, stroke_width=1, content=title))
+                                         Appearance(fill=rgb + (1,), font_size=11, stroke_width=1, content=title))
 
                 # Register range
                 ranges.append((page, 0 if x1 < 250 else 1, y1, y2))
